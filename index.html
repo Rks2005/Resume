@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saravanan R K - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #ff9ff3);
+            background-size: 300% 300%;
+            animation: gradientBG 10s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            display: flex;
+            justify-content: justify;
+            align-items: justify;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            font-size: 22px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        nav ul li a:hover {
+            color: #feca57;
+        }
+        .section {
+            display: none;
+            padding: 100px 20px;
+            background: linear-gradient(45deg, #1e1e60, #302b63, #24243e);
+            margin: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.5s ease-in-out;
+            font-size: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero {
+            display: block;
+            flex-direction: column;
+            align-items: justify;
+            justify-content: justify;
+            height: 100vh;
+            text-align: justify;
+            margin-top: 80px;
+            font-size: 22px;
+        }
+        .hero img {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 6px solid white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: white;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #feca57;
+            transform: scale(1.2);
+        }
+        .resume-download {
+            margin-top: 20px;
+        }
+        .resume-download button {
+            background-color: #ff6b6b;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .resume-download button:hover {
+            background-color: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('home')">Home</a></li>
+                <li><a onclick="showSection('about')">About</a></li>
+                <li><a onclick="showSection('projects')">Projects</a></li>
+                <li><a onclick="showSection('skills')">Skills</a></li>
+                <li><a onclick="showSection('achievements')">Achievements</a></li>
+                <li><a onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <img src="C:\Users\rks17\OneDrive\Desktop\Saravanan.R.K..jpg" alt="Saravanan R K">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Welcome to My Portfolio!
+            Hello, I’m <b>SARAVANAN R K! </b><br>
+            I am an Electronics and Communication Engineering (ECE) student with a passion for technology, problem-solving, and innovation. I enjoy exploring VLSI, embedded systems, and real-world applications of electronics.
+            <br>
+            What You’ll Find Here:<br>
+            🔹 About Me – Learn more about my background, interests, and projects.<br>
+            🔹 Projects – Explore the technical and innovative projects I’m working on.<br>
+            🔹 Achievements – Highlights from my participation in IEEE competitions and other events.<br>
+            🔹 Contact – Let’s connect and collaborate!<br>
+            
+            </p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/saravanan-rk" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Rks2005" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://ieee-collabratec.ieee.org/" target="_blank"><i class="fas fa-university"></i></a>
+        </div>
+
+        <div class="resume-download">
+            <a href="C:\Users\rks17\OneDrive\Desktop\SARAVANAN_R_K___Resume (7).pdf" download="Saravanan_RK_Resume.pdf">
+                <button>📄 Download Resume</button>
+            </a>
+        </div>
+    </section>
+    
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello, I’m <b>SARAVANAN R K!</b><br>
+            I am an Electronics and Communication Engineering (ECE) student with a keen interest in VLSI, embedded systems, and problem-solving through technology.I enjoy exploring new ideas, designing solutions, and applying engineering concepts to real-world challenges.I have participated in IEEE competitions, including the IEEE CAS Design Competition 2024-25, which gave me hands-on experience in circuit design and teamwork. As a coordinator of the IEEE Circuits and Systems Society, I contribute to organizing events and engaging with peers in the electronics community.Currently, I am working on projects related to glaucoma detection using intraocular pressure analysis and researching brain-to-device communication. Additionally, I am involved in an IEEE SIGHT initiative aimed at developing solar-powered computer labs for rural schools. I believe in continuous learning, practical application, and collaboration, always striving to improve my knowledge and skills to create meaningful solutions.</p>
+    </section>
+    
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <p>Details about your projects will be displayed here.</p>
+        <h3>📡 Intra Puff Pressure Analyzer - AI-based Glaucoma Detection</h3>
+                <p><strong>Description:</strong> A non-invasive device using air puff technology and AI to measure intraocular pressure (IOP) for early glaucoma detection.</p>
+                <p><strong>Technologies Used:</strong> AI/ML, Embedded Systems, IoT, Python, TensorFlow, Signal Processing</p>
+                <p><strong>Key Achievements:</strong></p>
+                <br>
+                    Developed an AI model with 94.7% accuracy for glaucoma detection.<br>
+                    Reduced testing time by 40% using dual-eye air puff measurement.<br>
+                    Ensured 90.2% reliable IoT data transmission for real-time monitoring.<br>
+                
+            </div>
+        
+            <div class="project">
+                <h3>🌱 Electricity-Generating Farms - Solar-Driven Precision Farming</h3>
+                <p><strong>Description:</strong> A smart farming system integrating IoT sensors and semi-transparent solar panels to enhance agricultural efficiency.</p>
+                <p><strong>Technologies Used:</strong> IoT, AI-driven Irrigation, Embedded Systems, Solar Panel Integration</p>
+                <p><strong>Key Achievements:</strong></p>
+                <br>
+                    Increased land efficiency by 120.5% using semi-transparent solar panels.<br>
+                    Reduced water consumption by 30% with AI-driven irrigation optimization.<br>
+                    Integrated IoT sensors with ±2% accuracy for real-time climate and soil monitoring.<br>
+                
+            </div>
+
+    </section>
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+        
+            <div class="project">
+                <h3>📡 Intra Puff Pressure Analyzer - AI-based Glaucoma Detection</h3>
+                <p><strong>Description:</strong> A non-invasive device using air puff technology and AI to measure intraocular pressure (IOP) for early glaucoma detection.</p>
+                <p><strong>Technologies Used:</strong> AI/ML, Embedded Systems, IoT, Python, TensorFlow, Signal Processing</p>
+                <p><strong>Key Achievements:</strong></p>
+                <br>
+                    Developed an AI model with 94.7% accuracy for glaucoma detection.<br>
+                    Reduced testing time by 40% using dual-eye air puff measurement.<br>
+                    Ensured 90.2% reliable IoT data transmission for real-time monitoring.<br>
+                
+            </div>
+        
+            <div class="project">
+                <h3>🌱 Electricity-Generating Farms - Solar-Driven Precision Farming</h3>
+                <p><strong>Description:</strong> A smart farming system integrating IoT sensors and semi-transparent solar panels to enhance agricultural efficiency.</p>
+                <p><strong>Technologies Used:</strong> IoT, AI-driven Irrigation, Embedded Systems, Solar Panel Integration</p>
+                <p><strong>Key Achievements:</strong></p>
+                <br>
+                    Increased land efficiency by 120.5% using semi-transparent solar panels.<br>
+                    Reduced water consumption by 30% with AI-driven irrigation optimization.<br>
+                    Integrated IoT sensors with ±2% accuracy for real-time climate and soil monitoring.<br>
+                
+            </div>
+
+    </section>
+    
+    <section id="skills" class="section">
+        <h2>🚀 Skills</h2>
+    
+        <div class="skill-category">
+            <h3>🔧 Technical Skills</h3>
+            <br>
+                Embedded Systems & IoT<br>
+                VLSI & FPGA Design<br>
+                AI & Machine Learning<br>
+                Biomedical Engineering<br>
+                Cloud Computing (Firebase, Google Cloud)<br>
+            
+        </div>
+    
+        <div class="skill-category">
+            <h3>💻 Programming Languages</h3>
+            <br>
+                <li>C, C++, Python, JavaScript<br>
+                <li>Verilog HDL (for VLSI)<br>
+                <li>MATLAB (Signal Processing & AI Models)<br>
+            
+        </div>
+    
+        <div class="skill-category">
+            <h3>🛠 Tools & Technologies</h3>
+            
+                TensorFlow & OpenCV (AI & Computer Vision)<br>
+                Arduino, Raspberry Pi, ESP32 (IoT Development)<br>
+                Altium & KiCad (PCB Design)<br>
+                Proteus & Multisim (Circuit Simulation)<br>
+                Git, GitHub, VS Code<br>
+            
+        </div>
+    
+        <div class="skill-category">
+            <h3>🎯 Soft Skills</h3>
+            <br>
+                Problem-Solving & Critical Thinking<br>
+                Leadership & Team Collaboration<br>
+                Effective Communication<br>
+                Time Management & Adaptability<br>
+                Innovation & Creativity<br>
+            
+        </div>
+    </section>
+    
+    <section id="achievements" class="section">
+        <h2>🏆 Achievements</h2>
+    
+        <div class="achievement">
+            <h3>🥇 Navonmesh National Level Idea Pitching Competition</h3>
+            <p><strong>Achievement:</strong> 2nd Runner-Up</p>
+            <p><strong>Description:</strong> Pitched an innovative solution integrating AI and IoT for healthcare applications, receiving national recognition.</p>
+        </div>
+    
+        <div class="achievement">
+            <h3>🚀 Sai Hack Fest</h3>
+            <p><strong>Achievement:</strong> Finalist</p>
+            <p><strong>Description:</strong> Developed a cutting-edge project using AI-driven automation and secured a place in the final round among 100+ teams.</p>
+        </div>
+    
+        <div class="achievement">
+            <h3>🏆 College-Level Hackathon</h3>
+            <p><strong>Achievement:</strong> 1st Runner-Up</p>
+            <p><strong>Description:</strong> Designed an IoT-based solution for smart farming, which won accolades for innovation and implementation.</p>
+        </div>
+    
+        <div class="achievement">
+            <h3>⚡ Hack4Purpose National Hackathon</h3>
+            <p><strong>Achievement:</strong> Top 100 Finalist</p>
+            <p><strong>Description:</strong> Created a problem-solving AI-driven model addressing societal challenges, making it to the top 100 teams nationally.</p>
+        </div>
+    
+        <div class="achievement">
+            <h3>🏅 IEEE CAS Poster Design Competition</h3>
+            <p><strong>Achievement:</strong> Winner</p>
+            <p><strong>Description:</strong> Designed an impactful technical poster on **VLSI innovation** and won recognition in the IEEE CAS competition.</p>
+        </div>
+    
+        <div class="achievement">
+            <h3>🎖 NPTEL Certification - Design Technology & Innovation</h3>
+            <p><strong>Achievement:</strong> Elite Silver</p>
+            <p><strong>Description:</strong> Successfully completed the NPTEL course with **Elite Silver** certification, showcasing expertise in design and innovation.</p>
+        </div>
+    
+    </section>
+    
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:rks17102005@gmail.com">rks17102005@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918144855888">+91 81448 55888</a></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/saravanan-rk" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Rks2005" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://ieee-collabratec.ieee.org/" target="_blank"><i class="fas fa-university"></i></a>
+        </div>
+
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section, .hero').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        showSection('home'); // Show Home by default
+    </script>
+</body>
+</html>
